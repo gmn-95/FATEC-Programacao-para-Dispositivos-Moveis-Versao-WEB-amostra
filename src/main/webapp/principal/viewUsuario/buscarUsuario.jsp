@@ -5,7 +5,7 @@
 <style type="text/css"><%@include file="/css/style.css" %></style>
 <script type="text/js"><%@include file="/js/funcoes.js"%></script>
 
-	<form  method="post" action="<%=request.getContextPath() %>/BuscarUsuario">
+	<form  method="post" action="<%=request.getContextPath() %>/BuscarUsuario" onsubmit="return validaCampo(this);">
 	
 		<div class="campo">
 			<select name="tipoPesquisa" id="tipoPesquisa">

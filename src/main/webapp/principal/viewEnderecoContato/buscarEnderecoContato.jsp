@@ -7,7 +7,7 @@
 <style type="text/css"><%@include file="/css/style.css" %></style>
 
 
-	<form method="post" action="<%=request.getContextPath() %>/BuscarEnderecoContato">
+	<form method="post" action="<%=request.getContextPath() %>/BuscarEnderecoContato" onsubmit="return validaCampo(this);">
 	
 		<div class="campo">
 				<select name="tipoPesquisa" id="tipoPesquisa">
